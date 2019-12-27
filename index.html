@@ -1,10 +1,14 @@
 <script type="text/javascript" runat="server">
   
+	 var subObj = Subscriber.Init(contactEmail);
+	Write(subObj);
    try{
       var attributes = subObj.Attributes.Retrieve();
+	   Write(attributes);
       }
 		catch(e){
           Write(e);
+
         }
   
 </script>
